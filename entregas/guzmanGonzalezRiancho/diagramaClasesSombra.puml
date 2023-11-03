@@ -1,0 +1,20 @@
+@startuml
+
+class Sombra {
+    longitud
+    direccion
+}
+
+class Luz {
+    intensidad
+}
+
+class Objeto {
+    posicion
+    opacidad
+}
+
+Luz -- Objeto : ilumina
+Objeto -- Sombra : proyecta
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+
+object "LuzDelSol" as Luz1 {
+    intensidad = "Alta"
+}
+
+object "Árbol" as Objeto1 {
+    posicion = "43.4770, -3.8613"
+    opacidad = "1"
+}
+
+object "SombraDelÁrbol" as Sombra1 {
+    longitud = "6.3"
+    direccion = "Este"
+}
+
+Luz1 -- Objeto1 : ilumina
+Objeto1 -- Sombra1 : proyecta
+
+@enduml
